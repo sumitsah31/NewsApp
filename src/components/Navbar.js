@@ -6,46 +6,43 @@ export default class Navbar extends Component {
     return (
       <nav className="navbar navbar-expand-lg bg-light fixed-top">
         <div className="container-fluid">
-          
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-             
               <li className="nav-item">
                 <Link className="nav-link" to="/general">
-                General
-                </Link> 
+                  General
+                </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/business">
-                Business
+                  Business
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/entertainment">
-                Entertainment
+                  Entertainment
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/health">
-                Health
+                  Health
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/science">
-                Science
+                  Science
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/sports">
-                Sports
+                  Sports
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/technology">
-                Technology
+                  Technology
                 </Link>
               </li>
-
             </ul>
           </div>
         </div>

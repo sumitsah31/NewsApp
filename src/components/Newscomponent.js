@@ -25,7 +25,6 @@ export default class Newscomponent extends Component {
     });
   }
   async componentDidMount() {
-  
     this.updatecard();
   }
 
@@ -41,20 +40,23 @@ export default class Newscomponent extends Component {
       loading: false,
     });
   };
-  
 
   render() {
     return (
       <>
-      
-        <h3 className="text-center" style={{margin:'35px 0px',marginTop:'90px'}}>Daily News: Top Headlines in {this.props.category} category</h3>
-        
-        {this.state.loading&&<Spinner/>}
+        <h3
+          className="text-center"
+          style={{ margin: "35px 0px", marginTop: "90px" }}
+        >
+          Daily News: Top Headlines in {this.props.category} category
+        </h3>
+
+        {this.state.loading && <Spinner />}
         <InfiniteScroll
           dataLength={this.state.articles.length}
           next={this.fetchMoreData}
           hasMore={this.state.articles.length !== this.state.totalResults}
-          loader={this.state.loading&&<Spinner />}
+          loader={this.state.loading && <Spinner />}
         >
           <div className="container">
             <div className="row">
@@ -75,7 +77,6 @@ export default class Newscomponent extends Component {
             </div>
           </div>
         </InfiniteScroll>
-        
       </>
     );
   }
